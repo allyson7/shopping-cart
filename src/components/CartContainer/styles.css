@@ -5,13 +5,31 @@
   justify-content: space-around;
   margin: 20px auto;
   border-radius: 10px;
-  width: 450px;
+  width: 1050px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   background: #fff;
 }
 
 .head {
+  width: 100%;
   padding: 10px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle {
+  position: absolute;
+  font-size: 9px;
+  width: 28px;
+  height: 28px;
+  top: 20px;
+  right: 0;
+}
+
+button img {
+  width: 20px;
+  height: 20px;
 }
 
 .title {
@@ -34,7 +52,7 @@ hr {
 }
 
 ul {
-  width: 100%;
+  width: 90%;
   list-style: none;
   padding: 0 30px;
 }
@@ -43,7 +61,8 @@ ul {
   gap: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  position: relative;
 }
 
 .item + .item {
@@ -70,10 +89,23 @@ li span {
 }
 
 .product-title {
-  width: 200px;
+  width: 300px;
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.quantity {
+  width: 30px;
+  padding: 0 5px;
+}
+
+.price {
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .discount {
@@ -98,6 +130,11 @@ li span {
   font-size: 20px;
 }
 
+.subtotal {
+  color: #c4c4c4;
+  font-size: 16px;
+}
+
 .free-shipping {
   height: 35px;
   width: 340px;
@@ -112,4 +149,6 @@ li span {
 .button-container {
   padding: 10px 0;
   width: 90%;
+  display: flex;
+  justify-content: flex-end;
 }
