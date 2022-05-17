@@ -2,6 +2,6 @@ import './styles.css';
 
 import React from 'react';
 
-export function Container(props) {
+export function CartContainer(props) {
   return <div className="container">{props.children}</div>;
 }
